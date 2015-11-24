@@ -1,0 +1,20 @@
+{
+	"name": "reaper",
+	"description": "League of Legends available name scraper",
+	"version": "1.0.2",
+	"author": "Jordan Doyle <jordan@doyle.wf>",
+	"main": "reaper.js",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/JordanDoyle/reaper.git"
+	},
+	"bugs": {
+		"url": "https://github.com/JordanDoyle/reaper/issues"
+	},
+	"dependencies": {
+		"chunk": "~0.0.2",
+		"colors": "~1.1.2",
+		"limiter": "~1.0.5"
+	},
+	"license": "MIT"
+}
