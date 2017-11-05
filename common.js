@@ -1,31 +1,12 @@
-console.error = function(msg)
-{
-	console.log("[".white + "!".red + "] ".white + msg.white);
+const colors = require('colors');
+
+console.error = (msg) => console.log("[".white + "!".red + "] ".white + msg.white);
+console.info = (msg) => console.log("[".white + "-".green + "] ".white + msg.white);
+console.warn = (msg) => console.log("[".white + "~".blue + "] ".white + msg.white);
+
+exports.shuffle = (array) => {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
 };
-
-console.info = function(msg)
-{
-	console.log("[".white + "-".green + "] ".white + msg.white);
-};
-
-console.warn = function(msg)
-{
-	console.log("[".white + "~".blue + "] ".white + msg.white);
-};
-
-exports.shuffle = function(array)
-{
-	var currentIndex = array.length;
-	var temporaryValue;
-	var randomIndex;
-
-	while(currentIndex !== 0)
-	{
-		randomIndex = Math.floor(Math.random() * currentIndex);
-		currentIndex -= 1;
-
-		temporaryValue = array[currentIndex];
-		array[currentIndex] = array[randomIndex];
-		array[randomIndex] = temporaryValue;
-	}
-}
