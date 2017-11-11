@@ -1,6 +1,6 @@
 # reaper
 
-[![License](https://img.shields.io/github/license/w4/reaper.svg?style=flat-square)](http://github.com/jordandoyle/reaper)
+[![License](https://img.shields.io/github/license/w4/reaper.svg?style=flat-square)](https://github.com/w4/reaper) [![Downloads](https://img.shields.io/crates/d/reaper.svg?style=flat-square)](https://crates.io/crates/reaper) [![Version](https://img.shields.io/crates/v/reaper.svg?style=flat-square)](https://crates.io/crates/reaper)
 
 [League of Legends](http://leagueoflegends.com) mass summoner name checker. Supply a region and a list
 and the application will check the list for available summoner names. Common uses are finding quick
@@ -38,5 +38,10 @@ For example:
 Will check the list `username_list.txt` for available summoner names on Europe West using API key `my-api-key` and
 outputs what it finds to output.txt
 
-Builds are available under releases or you can build it from source by pulling down the code and running
-`cargo build --release`.
+### Installation
+
+You can install via cargo by running `cargo install reaper`. This will install the latest version of reaper and the
+executable will be available globally on your operating system.
+
+Builds are available under [GitHub Releases](https://github.com/w4/reaper/releases) or you can build it from source
+by pulling down the code and running `cargo build --release`.
