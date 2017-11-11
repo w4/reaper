@@ -1,0 +1,19 @@
+[package]
+name = "reaper"
+version = "2.0.0"
+authors = ["Jordan Doyle <jordan@9t9t9.com>"]
+repository = "https://github.com/w4/reaper.git"
+homepage = "https://github.com/w4/reaper"
+license = "MIT"
+readme = "README.md"
+description = "League of Legends username availablity checker."
+
+[dependencies]
+ratelimit = "0.4.2"
+reqwest = "0.8.1"
+clap = "2.27.1"
+lazy_static = "0.2"
+fern = "0.4.3"
+log = "0.3.8"
+chrono = "0.4"
+regex = "0.2.2"
