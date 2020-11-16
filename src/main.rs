@@ -154,7 +154,7 @@ fn main() {
 fn send_request(server: &str, api_key: &str, username: &str) -> Result<(), Box<Error>> {
     let resp = CLIENT
         .get(&format!(
-            "https://{}.api.riotgames.com/lol/summoner/v3/summoners/by-name/{}?api_key={}",
+            "https://{}.api.riotgames.com/lol/summoner/v4/summoners/by-name/{}?api_key={}",
             server,
             username,
             api_key
