@@ -164,7 +164,7 @@ fn send_request(server: &str, api_key: &str, username: &str) -> Result<(), Box<E
     debug!("{:?}", resp);
 
     if !resp.status().is_success() {
-        if resp.status().eq(&StatusCode::NotFound) {
+        if resp.status().eq(&StatusCode::NOT_FOUND) {
             Ok(())
         } else {
             Err(Box::from("Bad response from Riot API"))
