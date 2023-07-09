@@ -10,7 +10,7 @@ description = "League of Legends username availablity checker."
 
 [dependencies]
 ratelimit = "0.4.2"
-reqwest = "0.8.1"
+reqwest = "0.9.24"
 clap = "2.27.1"
 lazy_static = "0.2"
 fern = "0.4.3"
